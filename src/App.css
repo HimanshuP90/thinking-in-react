@@ -22,6 +22,13 @@
   font-size: large;
 }
 
+.fadein {
+  opacity: 0;
+}
+.fadein.is-active {
+  opacity: 1;
+  transition: all ease 0.65s;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -7,6 +7,12 @@ class App extends Component {
     return (
       <div>
         <FilterableProductTable products={PRODUCTS} />
+        <div>
+         <p style={{height: '50px'}}>Prints out this usage information.</p>
+        <img 
+          className="fadein" alt="google"
+          src="https://www.google.co.jp/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+        </div>
       </div>
     );
   }
