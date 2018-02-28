@@ -1,30 +1,43 @@
-import React, { Component } from 'react';
-import './App.css';
-import FilterableProductTable from './FilterableProductTable';
+import React from 'react';
 
-class App extends Component {
+
+class Welcome extends React.Component {
+ state = {
+    clickCounter: 0,
+    currentTimestamp: new Date(),
+  };
+  
+  handleClick = () => {
+    this.setState((prevState) => {
+     return { clickCounter: prevState.clickCounter + 1 };
+    });
+  };
+  
+  componentDidMount() {
+   setInterval(() => {
+     this.setState({ currentTimestamp: new Date() })
+    }, 1000);
+  }
+  
   render() {
     return (
       <div>
-        <FilterableProductTable products={PRODUCTS} />
-        <div>
-         <p style={{height: '50px'}}>Prints out this usage information.</p>
-        <img 
-          className="fadein" alt="google"
-          src="https://www.google.co.jp/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
-        </div>
+        <button onClick={this.handleClick}>Click</button>
+        <p>Clicked: {this.state.clickCounter}</p>
+        <p>Time: {this.state.currentTimestamp.toLocaleString()}</p>
       </div>
     );
   }
 }
 
-const PRODUCTS = [
-  {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
-  {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
-  {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
-  {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
-  {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
-  {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
-];
- 
+class App extends React.Component {
+  render(){
+    return(
+      <Welcome
+      />
+    )
+  }
+}
+
+
 export default App;
