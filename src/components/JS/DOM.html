@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>||Working with elements||</title>
+</head>
+<body>
+	<section class="content-wrapper about animated" id="about">
+	</section>
+	<span class="heading" id="headline">
+	</span>
+	<header class="masthead clearfix" id="header">
+	</header>
+
+	<p class="pstmt" id="myStmt">
+		Hello API
+	</p>
+
+	<div class="menu" id="menu" onclick="hasClass()">
+		Himanshu
+	</div>
+	<div class="page" id="menu" onclick="hasClass()">
+		Sudhanshu
+	</div>
+	<div class="navigation" id="menu" onclick="hasClass()">
+		
+	</div>
+	<script type="text/javascript">
+		// var about = document.getElementById("about");
+		// console.log(about.classList); 
+
+		//Adding class
+		document.getElementById("headline").classList.add("title", "mySpan", "holi");
+
+		//Removing class
+		document.getElementById("header").classList.remove("masthead")
+
+		//Contains class
+		let p =	document.getElementById("myStmt");
+		if (p.classList.contains("pstmt")) {
+			alert("yeah we have");
+		} else {
+			alert("Nope, we dont have");
+		}
+
+		//Toggling class
+		var page = document.getElementById("page"); 
+		var menu = document.getElementById("menu"); 
+		var nav = document.getElementById("navigation"); 
+
+		function hasClass() { 
+		  page.classList.toggle("open"); 
+		  menu.classList.toggle("active");
+		  nav.classList.toggle("hidden"); 
+		}
+	</script>
+</body>
+</html>
