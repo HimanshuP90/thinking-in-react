@@ -10,7 +10,6 @@ class News extends React.Component {
 	}
 
 	componentDidMount() {
-		console.log(this.props.news.type)
 		const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=72405ce7c4e743e9ad8b105b330c6fe2`;
 		
 		fetch(url).then((response) => {
