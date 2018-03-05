@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import News from './News/News';
 import Sidenews from './News/Sidenews';
 
@@ -27,6 +28,7 @@ class MyNewsApp extends React.Component {
       		<nav>
       			<div className="nav-wrapper red lighten" style={{textAlign: "center"}}>
       				<a href="/" className="bran-logo center"><b>News using(https://newsapi.org/)</b></a>
+              <Link to='/home'>Home</Link>
       			</div>
       		</nav>
       	</div>
