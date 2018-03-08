@@ -4,10 +4,6 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "c3": "^0.4.21",
-    "classnames": "^2.2.5",
-    "csspin": "^1.1.4",
-    "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
