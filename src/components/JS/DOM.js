@@ -1,5 +1,30 @@
 (function(){
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function Employee(name) {
 	this.name = name;
 }
@@ -16,5 +41,26 @@ console.log(emp2.greet())
 console.log(emp3.greet())
 
 console.log(emp1.__proto__.constructor);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 })()
