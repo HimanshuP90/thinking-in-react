@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NewsSingle = ({item}) => (
-	<div className="col s6">
+	<div className="col s4">
 		<div className="card">
 			<div className="card-image">
 				<img src={item.urlToImage} alt={item.title} />
