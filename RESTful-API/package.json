@@ -1,0 +1,20 @@
+{
+  "name": "api-design-with-nodejs",
+  "version": "1.0.0",
+  "description": "\"RESTful API design with Node.js\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "himanshup90"
+  },
+  "author": "himanshup pandey <himanshup895@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
+  }
+}
