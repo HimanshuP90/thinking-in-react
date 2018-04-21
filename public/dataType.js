@@ -1,5 +1,5 @@
 // The latest ECMAScript standard defines seven data types:
-six datatypes that are primitives:
+Six datatypes that are primitives:
 1) Boolean
 2) Null
 3) Undefined

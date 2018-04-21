@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const appRoot = document.getElementById('app-root');
+// const appRoot = document.getElementById('app-root');
 const modalRoot = document.getElementById('modal-root');
 
 class Modal extends React.Component {

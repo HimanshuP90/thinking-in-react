@@ -1,3 +1,10 @@
+/*
+  Closure: A closure is the combination of a function and the lexical environment
+  		   within which that function was declared. -------MDN
+*/
+
+
+
 // var a = 10;
 // function outer() {
 // 	var b = 20;
@@ -248,3 +255,34 @@
 // (params1, params2) => { blocl}
 
 
+/*
+
+function foo(x) {
+	var tmp = 3;
+	function bar(y) {
+		console.log(x + y + (++tmp));
+	}
+	bar(10);
+}
+
+foo(2);
+
+Note: This will always log 16 because bar can access the x which was defined as argument
+			to foo, and it can also access tmp from foo.
+
+That is a closure. Simply accessing variables outside of your immediate lexical scope creates a closure.
+
+function foo(x) {
+	var tmp = 3;
+	return function (y) {
+		console.log(x + y + (++tmp));
+	}
+}
+
+var bar = foo(2); //bar is now closure
+bar(10);
+
+*/
+
+
+// When a JavaScript function is invoked, a new execution context is created

@@ -36,3 +36,27 @@ console.log(name);
 
 /* The problem with this is that when you declared and defined that variable name,
  it was immediately registered on the window object */
+
+
+ /* 
+
+Round 1 : 
+1) In a matrix (having 0 and 1) if any value is 1 than fill its row and column with 1.
+2) Bottom view of a tree.
+3) upper view of a tree.
+
+
+Round 2:
+1) Longest Common Sub array;
+2) Given String.Find 3rd largest occurring character.
+3) Find Maximum Sum sub Matrix in a matrix.
+
+Round 3:
+
+1) Print Matrix in spiral order.
+2) Number of islands in a matrix.
+3) Design patterns.
+4) Hash Map implementation 
+
+
+ */

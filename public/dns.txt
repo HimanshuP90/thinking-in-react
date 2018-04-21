@@ -1,0 +1,42 @@
+type in browser:  www.example.com (domain name)
+
+1) IP Address i.e. 111.222.333.444 
+2) Local Caches i.e browser local caches
+3) Recursive DNS Servers i.e. located at ISP
+4) Root DNS Servers
+5) Top Level DNS Servers i.e. .com .org .edu .io
+6) Authoritative DNS Servers
+
+We type in a domain name (www.example.com) into our browser.
+The browser checks its cache and the computer's cache for the DNS records for that match the domain name we entered. If it succeeds, it requests the page from the website's host.
+If we haven’t found our record yet, our request goes to our Recursive DNS Servers that we have set for our computer or network (probably our ISP). If they have the record cached, we take the results from them and try to load the page (and we also cache it locally for later use).
+If we still haven’t found it, we go to the Root DNS Servers, and ask them where to find the correct Top Level DNS Servers for the .com TLD.
+We arrive at the .com Top Level DNS Servers, who have one nugget of information for us - they are kept up to date on which Authoritative Name Servers are responsible for example.com and they share that information with us.
+Then, we head over to the Authoritative Name Servers, who give us the record we’re looking for.
+Finally, the result is cached by the recursive DNS servers, and by our local system - and we load our page!
+
+https://scotch.io/tutorials/dns-explained-how-your-browser-finds-websites
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------------------------------
+
+Cookie:
+
+Max size of 4093 bytes
+Can set expiration date
+Sent on every request
+
+
+sessionStorage:
+
+Max size of 2.5MBs+ depending on browser
+Stored in browser and not sent with every request
+If you close a tab using sessionStorage, open a new tab, or exit the browser - you'll lose that specific sessionStorage data.
+
+
+localStorage:
+
+Max size of 2.5MBs+ depending on browser
+Stored in browser and not sent with every request
+Will persist if browser/tabs are closed.

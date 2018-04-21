@@ -11,7 +11,7 @@ function Queue() {
 	};
 
 	this.dequeue = function() {
-		return collection.shift();
+		return collection.shift(); //first item of array
 	};
 
 	this.front = function() {
@@ -28,4 +28,11 @@ function Queue() {
 }
 
 var q = new Queue();
-console.log(q);
+q.enqueue('a');
+q.enqueue('b');
+q.enqueue('c');
+q.enqueue('d');
+q.enqueue('e');
+q.print();
+q.dequeue();
+console.log(q.isEmpty() === true);

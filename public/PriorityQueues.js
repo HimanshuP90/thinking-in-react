@@ -1,4 +1,6 @@
-/* PriorityQueue */
+/* PriorityQueue: also passesd element with the priority
+
+*/
 
 function PriorityQueue () {
     var collection = [];
@@ -12,7 +14,7 @@ function PriorityQueue () {
             var added = false;
             for (var i=0; i<collection.length; i++){
                  if (element[1] < collection[i][1]){ //checking priorities
-                    collection.splice(i,0,element);
+                    collection.splice(i, 0, element);
                     added = true;
                     break;
                 }
@@ -22,6 +24,7 @@ function PriorityQueue () {
             }
         }
     };
+
     this.dequeue = function() {
         var value = collection.shift();
         return value[0];
@@ -38,7 +41,16 @@ function PriorityQueue () {
 }
 
 var pq = new PriorityQueue(); 
-pq.enqueue(['Beau Carnes', 8]); 
-pq.enqueue(['Quincy Larson', 3]);
-//pq.enqueue(['Ewa Mitulska-Wójcik', 1])
-//pq.enqueue(['Briana Swift', 2])
+pq.enqueue(['Reactjs', 1]); 
+pq.enqueue(['jQuery', 3]);
+pq.enqueue(['bootstrap', 5]);
+pq.enqueue(['JavaScript', 2]);
+pq.enqueue(['jQuery', 0]);
+pq.printCollection();
+
+/*
+arr.splice(): returns the removed items in an array
+array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+
+arg1: what positions 
+*/

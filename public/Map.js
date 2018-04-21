@@ -56,3 +56,45 @@ m2.has('hands');
 m2.entries();
 console.log(m2.has('hands'))
 console.log(m2.entries())
+
+
+------------------------------------------------
+var tasks = [
+    {
+	'name': 'Write your tutor',
+	'duration': 120
+	},
+    {
+	'name': 'Work out',
+	'duration': 60
+	},
+    {
+	'name': 'Procrastinate',
+	'duration': 120
+	}
+];
+
+var task_names = [];
+for(i=0; i<tasks.length;i++){
+	task_names.push(tasks[i].name);
+}
+
+or
+
+var _names = tasks.map(function(task, index, array){
+	return task.name;
+});
+_________________________________________________
+
+
+var map = function(array, callback){
+	var new_array = [];
+	array.forEach(function(element, index, array) {
+		new_array.push(callback(element));
+	});
+	return new_array;
+};
+
+var task_names = map(tasks, function(task) {
+	return task.name;
+});

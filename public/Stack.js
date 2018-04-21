@@ -1,15 +1,18 @@
-/* Stack */
-//functions: push, pop, peek, length
+/* Stack
 
+  functions: push, pop, peek, length
+  Also unshift, shift
+
+*/
 var letters = [];
 var word = "nitin";
 var rword = "";
 
-for (var i = 0; i <word.length; i++) {
+for (var i = 0; i < word.length; i++) {
   letters.push(word[i]);
 }
 
-for (var i = 0; i <word.length; i++) {
+for (var i = 0; i < word.length; i++) {
   rword += letters.pop();
 }
 

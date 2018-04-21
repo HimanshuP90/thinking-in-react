@@ -1,0 +1,58 @@
+Block Elements: are those that take up the full width available on the webpage
+
+Paragraphs <p>
+Headers <h1> through <h6>
+Divisions <div>
+List and list items <ol> <li> <ul>
+Forms <form>
+
+
+Inline Elements: are those who only take up as much width as needed to display the content of the elements
+Span <span>
+Image <img>
+Anchor <a>
+
+
+Meta: Metadata is data(information) about data, will not be displayed on the page, but will be machine parsable
+
+The doctype declaration should be the very first thing in an HTML document, before the tag. The doctype declaration is not an HTML tag; it is an instruction to the web browser about what version of the markup language the page is written in. The doctype declaration refers to a Document Type Definition (DTD).
+
+
+specifics-on-css-specificity:
+
+https://css-tricks.com/specifics-on-css-specificity/
+
+1) Inline Styling
+2) id
+3) class
+4) elements
+
+The position Property:
+	static : Static positioned elements are not affected by the top, bottom, left, and right properties.
+	relative
+	fixed: A fixed element does not leave a gap in the page where it would normally have been located.
+	absolute
+	sticky
+
+Bootstrap Grid System:
+	Bootstrap's grid system allows up to 12 columns across the page.
+Grid Classes: 
+	xs (for phones - screens less than 768px wide)
+	sm (for tablets - screens equal to or greater than 768px wide)
+	md (for small laptops - screens equal to or greater than 992px wide)
+	lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+
+<div class="container">
+  <div class="row">
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+  </div>
+  <div class="row">
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+  </div>
+  <div class="row">
+    ...
+  </div>
+</div>
