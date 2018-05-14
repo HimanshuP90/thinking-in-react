@@ -36,8 +36,8 @@ console.log(newVolume(12, 6));
  		  use bind to pass a specific object to a function that uses a 'this' reference. 
 
  ex. function fullName() {
-	return `Here this is ${this.first} ${this.last}`;
- }
+		return `Here this is ${this.first} ${this.last}`;
+    }
 
 
 var person = {first: "Foo", last: "Bar"};
