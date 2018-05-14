@@ -1,6 +1,6 @@
  /*
-	Currying: currying is the process of breaking down a function into a series of functions that
-						each take a single argument.
+  Currying: currying is the process of breaking down a function into a series of functions that
+			each take a single argument.
   Closure: A closure is the combination of a function and the lexical environment
   				 within which that function was declared. -------MDN
   instanceof:  operator checks the current object and returns true if the object is of the specified type;
