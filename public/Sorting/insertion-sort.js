@@ -1,6 +1,6 @@
 /*
 	Insertion Sort: Insertion sort is a simple sorting algorithm that works the way
-									we sort playing cards in our hands.
+					we sort playing cards in our hands.
 	Algo:
 	insertionSort(arr, n)
 	Loop from i = 1 to n-1.

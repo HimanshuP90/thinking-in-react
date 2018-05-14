@@ -1,62 +1,46 @@
-(function(){
-	var inputStr = '{}[]()';
-	var expression = inputStr.split(''); //convert the string in array
-	var stack = [];
+let inputStr = '{}[](){{[({})]}}';
+let stack = [];
+let expression = inputStr.split('');
 
-	for( var i = 0; i < expression.length; i++) {
-			if (isParanthesis(expression[i])) {
-				if (isOpenParenthesis(expression[i])) {
-					stack.push(expression[i]);
-										console.log('matc')
-
-				} else {
-					if (stack.length == 0) {
-						return Print(false);
-					}
-					var top = stack.pop();
-					if (!matches(top, expression[i])) {
-						return Print(false);
-					}
-				}
+function isBalanced(exp) {
+	for (let i = 0; i < expression.length; i++) {
+		if (exp[i] == '(' || exp[i] == '{' || exp[i] == '[') {
+			stack.push(exp[i]);
+		} else if( exp[i] == ')' || exp[i] == '}' || exp[i] == ']') {
+			if (stack.length == 0 || !isMatchingPair(stack[stack.length -1], exp[i])) {
+				return false;
+			} else {
+				stack.pop();
 			}
-	}
-
-function isParanthesis(char) {
- 	var inputStr = '{}[]()';
- 	if (inputStr.indexOf(char) > -1) {
- 		return true;
- 	} else {
- 		return false;
- 	}
- }
-
-function isOpenParenthesis(char) {
-	for (var j = 0; j < inputStr.length; j++) {
-		if (inputStr[j] === char) {
-			return true;
 		}
 	}
-	return false;
-}
 
-function matches(top, expression) {
-	for (var i = 0; i < inputStr.length; i++) {
-		console.log(inputStr[i])
-		if (inputStr[i] === top && inputStr[i] === expression) {
-			return true
-		} else {
-			return false
-		}
-	}
-}
-
-function Print(bool) {
-	console.log(bool)
-	if (bool) {
-		console.log('Paranthesis matched..!!')
+	if (stack.length == 0) {
+		return true;
 	} else {
-		console.log('Paranthesis not matched..!!')
+		return false;
 	}
 }
 
-})()
+function isMatchingPair(ch1, ch2) {
+	if (ch1 == '(' && ch2 == ')') {
+		return true;
+	} else if (ch1 == '{' && ch2 == '}') {
+		return true;
+	} else if (ch1 == '[' && ch2 == ']') {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+
+function validString(exp) {
+	if (isBalanced(exp)) {
+		console.log("Yeah expression is balanced  :-) ");
+	} else {
+		console.log("Ooh expression is not balanced :-( ");
+	}
+}
+
+validString(expression);
