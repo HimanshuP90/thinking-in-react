@@ -11,14 +11,39 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div> 
-  <h2>Without a Container</h2>
-  <p>The w3-container class is one of the most important of the w3.CSS classes. It provides correct margins, padding, alignments, and more to common HTML elements.</p>
-</div>
+	<!-- <div> 
+	  <h2>Without a Container</h2>
+	  <p>The w3-container class is one of the most important of the w3.CSS classes. It provides correct margins, padding, alignments, and more to common HTML elements.</p>
+	</div>
+	 -->
+	<div class="container"> 
+	  <h2 id="hi">With a Container</h2>
+	  <p>The w3-container class is one of the most important of the w3.CSS classes. It provides correct margins, padding, alignments, and more to common HTML elements.</p>
+	</div>
 
-<div class="container"> 
-  <h2>With a Container</h2>
-  <p>The w3-container class is one of the most important of the w3.CSS classes. It provides correct margins, padding, alignments, and more to common HTML elements.</p>
-</div>
+	<script>
+
+		var getElementsByClassName = function(className) {
+			var bodyHtml = document.body;
+			var result = [];
+			var hasClass = function(bodyHtml) {
+				if (bodyHtml.classList && bodyHtml.classList.contains(className)) {
+					result.push(bodyHtml);
+				}
+			}
+
+			if (bodyHtml.hasChildNodes()) {
+				for (var i = 0; i < bodyHtml.childNodes.length; i++) {
+					hasClass(bodyHtml.childNodes[i]);
+				}
+			}
+			hasClass(bodyHtml);
+			return result
+		}
+		  console.log(getElementsByClassName("container"));
+		  console.,log(getElementByID("hi"));
+		  // console.log(getElementsByClassName("a"));
+
+	</script>
 </body>
 </html>

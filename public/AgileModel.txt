@@ -20,3 +20,12 @@ Individuals and Interactions
 Working Software
 Customer collaboration
 Responding to change
+
+
+
+Scrum Meeting: 
+The scrum meeting, in an agile development world, has every team member answer-------
+
+i) What did you accomplish since the last meeting?
+ii) What are you working on until the next meeting?
+iii) What is getting in your way or keeping you from doing your job?

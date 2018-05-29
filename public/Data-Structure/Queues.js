@@ -1,4 +1,4 @@
-//Queues
+//Queues : FIFO
 
 function Queue() {
 	collection = [];

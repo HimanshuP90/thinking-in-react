@@ -1,4 +1,4 @@
-/* Stack
+/* Stack = LIFO
 
   functions: push, pop, peek, length
   Also unshift, shift
