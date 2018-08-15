@@ -37,9 +37,9 @@ function isMatchingPair(ch1, ch2) {
 
 function validString(exp) {
 	if (isBalanced(exp)) {
-		console.log("Yeah expression is balanced  :-) ");
+		console.log("%cYeah expression is balanced  :-) ", "color: red; font-size:15px");
 	} else {
-		console.log("Ooh expression is not balanced :-( ");
+		console.log("%cOoh expression is not balanced :-( ", "color: green; font-size:15px");
 	}
 }
 
