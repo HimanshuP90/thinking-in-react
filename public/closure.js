@@ -28,7 +28,7 @@
 // // JS create scope chain, it also remember function scope
 // //Clousre: A function which remember its scope . remembers is the scope during the time of declaration and thats
 
-// //Whatever varioable you have created in each excution of function.
+// //Whatever variable you have created in each excution of function.
 
 // // in first call of function
 // // 1 instance of a

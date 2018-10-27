@@ -15,7 +15,7 @@ right = 5, 6, 6, 4, 8;
 
 pivot = 2;
 left = 1;
-right = 3;
+right = 4;
 
 return [left, pivot, right];
 
