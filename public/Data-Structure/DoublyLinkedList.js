@@ -68,12 +68,12 @@ function DoublyLinkedList(){
 }
 
 var doublyLinkedList = new DoublyLinkedList();
-doublyLinkedList.display(); // => ''
+doublyLinkedList.display();
 doublyLinkedList.add(1);
 doublyLinkedList.add(2);
 doublyLinkedList.add(3);
 doublyLinkedList.add(4);
 doublyLinkedList.display()
-console.log('length is 4:', doublyLinkedList.size()); // => 4
-doublyLinkedList.remove(2); // remove value
+console.log('length is 4:', doublyLinkedList.size());
+doublyLinkedList.remove(2);
 doublyLinkedList.display(); 
