@@ -13,7 +13,6 @@ function findMaxAverage(nums, k){
     for(let i = 0; i < k; i++){
         currentMax += nums[i];
     }
-    
     let maxFor = currentMax;
     for (var j = k; j < nums.length; j++) {
 		currentMax += (nums[j] - nums[j - k]);
