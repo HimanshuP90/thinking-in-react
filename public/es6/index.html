@@ -108,15 +108,62 @@
 
 */
 
+// es6 -> babel -> es5
+
+/*
+
+//Reducer usecase
+
+function balancendParens(string){
+	return string.split("").reduce((prev, char) => {
+		if(char === "(") return ++prev;
+		if(char === ")") return --prev;
+		return prev;
+	}, 0);
+}
+balancendParens("(((((");  // if 0 then balenced o.w. not
+
+*/
 
 
+//Creating Promise
+const isMomHappy = true;
+const willGetNewPhone = new Promise(function(resolve, reject){
+		if(isMomHappy){
+			const phone = {
+				brand: 'Samsung',
+				color: 'black',
+				price: '18k'
+			}
+			resolve(phone) // fullfilled
+		} else {
+			const reason = new Error('mom is not happy');
+			reject(reason) //reject
+		}
+});
+
+//Chainig Promises
+const showOff = function(phone){
+	const message = `Hey friend, I have new ${phone.brand} ${phone.color} of price ${phone.price}`
+	return new Promise(function(resolve, reject){
+		resolve(message);
+	});
+};
 
 
+//consuming promise
+const askMom = function(){
+	willGetNewPhone
+		.then(showOff) //Chainig Promises
+		.then(function(fullfilled){
+			console.log(fullfilled);
+		})
+		.catch(function(error){
+			console.log(error);
+		})
+};
 
-
-
-
-
+askMom();
 
 
 
