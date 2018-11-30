@@ -21,6 +21,7 @@ Function.prototype.polyfillBind = function(oThis) {
     return fBound;
 };
 
+// const bind = (fn, context) => (...args) => fn.apply(context, args)
 
 var mathLib = {
 	pi: 3.14,
