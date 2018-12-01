@@ -14,7 +14,7 @@ Function.prototype.polyfillBind = function(oThis) {
         };
 
     if (this.prototype) {
-    fNOP.prototype = this.prototype; 
+        fNOP.prototype = this.prototype; 
     }
     fBound.prototype = new fNOP();
 

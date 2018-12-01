@@ -16,6 +16,7 @@ if (str1 === str2) {
 	return false;
 }
 
+/*
 
 1) Given a tree, construct a json to send that tree over the internet flipkart
 https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/
@@ -23,3 +24,5 @@ https://stackoverflow.com/questions/15792794/convert-parent-child-array-to-tree
 
 2) Given a stream of integers find median at given points
 https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+
+*/

@@ -1,8 +1,8 @@
 function chocolateDistributionProblem(chocolates, students) {
     const noOfPackets = chocolates.length;
-    if(students == 0 || noOfPackets == 0) return 0;
+    if(students == 0 || noOfPackets == 0) console.log('0');
     chocolates.sort((a, b) => a-b)
-    if(noOfPackets < students) return -1;
+    if(noOfPackets < students) console.log('-1');
     let minDiff = 999999;
     let first = 0,
         last = 0;

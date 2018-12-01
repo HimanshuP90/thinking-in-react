@@ -9,7 +9,7 @@
 	false: bubble
 
 	e.stopPropagation()
-	source.addEventListener(eventName, eventHandler, true	)
+	source.addEventListener(eventName, eventHandler, true)
 */
 
 
