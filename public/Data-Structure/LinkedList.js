@@ -152,6 +152,9 @@ function LinkedList() {
       currentNode = currentNode.next;
     }
   }
+//Given a non-empty, singly linked list with head node head,
+//return a middle node of linked list.
+
 
   this.middleList = function() {
     let currentNode = head;
