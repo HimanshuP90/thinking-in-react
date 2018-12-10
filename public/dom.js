@@ -150,6 +150,16 @@ tabs.addEventListener('click', function(e){
 
 
 
+//Keyboard Events
+
+document.body.addEventListener('keydown', function(e){
+	console.log(e.keyCode); //65
+	console.log(e.code) // keyA
+	console.log(e.key) // a
+	console.log('key: ' + e.keyCode);
+    console.log('key: ' + e.key);
+    console.log('code: ' + e.code);
+})
 
 
 
