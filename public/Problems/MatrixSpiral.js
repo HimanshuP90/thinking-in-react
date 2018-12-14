@@ -6,6 +6,7 @@
 			   [7,  8,  9,  10, 11, 12],
 			   [13, 14, 15, 16, 17, 18]
 			  ];
+			  
 	console.log(arr);
 
 	var i, rowStart = 0, colStart = 0, rowEnd =3 , colEnd=6;
