@@ -14,6 +14,22 @@ Node = element + reference of next node
 
 */
 
+
+function LinnkedList() {
+  let length = 0;
+  let head = null;
+  const Node = function(element) {
+    this.element = element;
+    this.next = null;
+  }
+
+  this.add = function(element) {
+    
+  }
+
+}
+
+
 function LinkedList() {
   var length = 0; 
   var head = null; 

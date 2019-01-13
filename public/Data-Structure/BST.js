@@ -236,14 +236,14 @@ bst.add(5);
 bst.add(7);
 bst.add(20);
 
-console.log(bst)
-console.log(bst.findMinHeight());
-console.log(bst.findMaxHeight());
-console.log(bst.isBalanced());
+console.log('BInary Search Tree',bst)
+console.log('findMinHeight = ', bst.findMinHeight());
+console.log('findMaxHeight = ', bst.findMaxHeight());
+console.log('isBalanced = ', bst.isBalanced());
 bst.add(10);
-console.log(bst.findMinHeight());
-console.log(bst.findMaxHeight());
-console.log(bst.isBalanced());
+console.log('findMinHeight = ', bst.findMinHeight());
+console.log('findMaxHeight = ',bst.findMaxHeight());
+console.log('isBalanced = ', bst.isBalanced());
 console.log('inOrder: ' + bst.inOrder());
 console.log('preOrder: ' + bst.preOrder());
 console.log('postOrder: ' + bst.postOrder());
